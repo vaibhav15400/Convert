@@ -1,0 +1,40 @@
+.backgroundgradiant{
+  background-image: linear-gradient(
+    to top right,rgba($color-grey-light-1,.8)
+    ,rgba($color-grey-light-2,.8)
+  )
+}
+.card {
+  margin-top: 4rem;
+  position: relative;
+  height: 35rem;
+
+  &__side {
+    font-size: 2rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.15);
+    &--front{
+      background-color: $color-white;
+    }
+  }
+  &__picture{
+    background-size: cover;
+    height: 13rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../img/nat-6.jpg);
+    }
+  }
+}

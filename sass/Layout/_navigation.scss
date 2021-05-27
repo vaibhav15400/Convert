@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  margin-top: 2rem;
+  font-family: $default-font-family;
+  background-image: linear-gradient(
+    to left top,
+    rgba($color-grey-dark-3, 0.25),
+    rgba($color-grey-light-1, 0.5)
+  );
+  color: $color-tertiary-dark;
+  &_items {
+    display: flex;
+    list-style: none;
+    @include respond(phone){
+      font-size:10%
+
+    }
+  }
+  &__links {
+    padding: 2rem;
+    font-size: 2.5rem;
+  }
+  &_Search {
+    position: absolute;
+    right: 5%;
+    margin: 2rem;
+    height: 3rem;
+  }
+}
+.navigations{
+  font-size: 2em;
+  text-transform: capitalize;
+  list-style: none;
+
+  &_lin{
+    list-style: none;
+  
+  }
+  &__inks {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+}
+.box{
+  margin-top: 1em;
+border: 2px solid $color-grey-dark-2;
+border-radius: 25px;
+}

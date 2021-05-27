@@ -1,0 +1,71 @@
+.header{
+    display:flex;
+    
+    &__logo{
+        background-image: linear-gradient(to right bottom ,rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8));
+    }
+
+
+    &__Company{
+        margin:3rem;
+        &_Name{
+        letter-spacing: 1.5rem;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: $color-grey-dark-2;
+        }
+        &_Des{
+        letter-spacing: .9rem;
+        color: $color-grey-dark-3;
+        text-transform: capitalize;
+
+           }
+
+    }
+    &__lang{
+        position: absolute;
+        top: 4rem;
+        right: 10rem;
+        text-align: center;
+        word-spacing: 0.5rem;
+        font-size: 1.1rem;
+        &_en{
+            border: 2px solid $color-grey-dark-4;
+            &-1{
+                text-decoration: none;
+                color: $color-tertiary-dark;
+            }
+        }
+        &_fr{
+            border: 2px solid $color-grey-dark-4;
+        }
+        &_de{
+            border: 2px solid $color-grey-dark-4;
+        }
+        &_cn{
+            border: 2px solid $color-grey-dark-4;
+        }
+    }
+    &__icon {
+        font-size: 6rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        background-image: linear-gradient(
+          to right,
+          $color-primary-light,
+          $color-primary-dark
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+        border-radius: 50%;
+        border: 5px solid rgba($color-primary-dark,0.8);
+        animation: rotate360 2.5s ;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        &:hover{
+            transform: translateY(1.5rem) scale(1.5);
+            
+        }
+    }
+}
